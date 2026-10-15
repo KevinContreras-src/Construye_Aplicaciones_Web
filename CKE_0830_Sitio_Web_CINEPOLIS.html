@@ -1,0 +1,152 @@
+
+<html>
+<head>
+    <title>Cinépolis</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eee;
+            margin: 0;
+        }
+
+        header, footer {
+            background: #003b70;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        body > p {
+            background: #00529b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        body > p a {
+            color: white;
+            margin: 5px;
+        }
+
+        section {
+            text-align: center;
+            padding: 10px;
+        }
+
+        section section {
+            display: inline-block;
+            background: white;
+            width: 180px;
+            padding: 10px;
+            margin: 5px;
+            vertical-align: top;
+        }
+
+        img {
+            width: 160px;
+            height: 200px;
+        }
+
+        section a {
+            background: #0066b3;
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        h2 {
+            color: #003b70;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CINÉPOLIS</h1>
+        <p>La magia del cine</p>
+    </header>
+
+    <p>
+        <a href="#inicio">Inicio</a>
+        <a href="#cartelera">Cartelera</a>
+        <a href="#estrenos">Estrenos</a>
+        <a href="#club">Club</a>
+        <a href="#registro">Registro</a>
+    </p>
+
+    <section id="inicio">
+        <h2>Bienvenido a Cinépolis</h2>
+        <p>Disfruta las mejores películas.</p>
+    </section>
+
+    <section id="cartelera">
+        <h2>Cartelera</h2>
+
+        <section>
+            <img src="imagenes/sf.jpg">
+            <h3>Street Fighter</h3>
+            <p>Acción</p>
+            <a href="#cartelera">Ver película</a>
+        </section>
+
+        <section>
+            <img src="imagenes/verity.jpg">
+            <h3>Verity</h3>
+            <p>Suspenso</p>
+            <a href="#cartelera">Ver película</a>
+        </section>
+    </section>
+
+    <section id="estrenos">
+        <h2>Próximos estrenos</h2>
+
+        <section>
+            <img src="imagenes/ad.jpg">
+            <h3>Avengers: Doomsday</h3>
+            <p>Diciembre de 2026</p>
+        </section>
+
+        <section>
+            <img src="imagenes/duna.jpg">
+            <h3>Duna: Parte Tres</h3>
+            <p>Diciembre de 2026</p>
+        </section>
+    </section>
+
+    <section id="club">
+        <h2>Cinépolis Club</h2>
+
+        <form>
+            <input type="text" placeholder="Número de tarjeta">
+            <br>
+            <input type="email" placeholder="Correo">
+            <br>
+            <a href="#club">Consultar tarjeta</a>
+        </form>
+    </section>
+
+    <section id="registro">
+        <h2>Iniciar sesión o registrarse</h2>
+
+        <form>
+            <input type="email" placeholder="Correo">
+            <br>
+            <input type="password" placeholder="Contraseña">
+            <br>
+            <a href="#registro">Iniciar sesión</a>
+            <a href="#registro">Crear cuenta</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>Cinépolis - El Cine FAVORITO de los Polis :D</p>
+    </footer>
+
+</body>
+</html>
