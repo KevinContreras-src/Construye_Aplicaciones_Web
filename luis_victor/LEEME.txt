@@ -1,0 +1,76 @@
+===========================================
+   LUIS VICTOR - GUIA PASO A PASO
+===========================================
+
+QUE NECESITAS
+- XAMPP (gratis): https://www.apachefriends.org
+- Un navegador (Chrome, Edge, etc.)
+
+-------------------------------------------
+PASO 1: INSTALAR XAMPP
+-------------------------------------------
+1. Descarga e instala XAMPP (siguiente, siguiente, finalizar).
+2. Se instala normalmente en:  C:\xampp
+
+-------------------------------------------
+PASO 2: PONER LOS ARCHIVOS DEL SITIO
+-------------------------------------------
+1. Descomprime este archivo.
+2. Debes tener una carpeta llamada  luis_victor  con:
+      conexion.php, database.sql, estilo.css,
+      login.php, logout.php, registro.php, tienda.php
+3. Copia la carpeta  luis_victor  completa dentro de:
+      C:\xampp\htdocs\
+   Debe quedar asi:  C:\xampp\htdocs\luis_victor\login.php
+
+-------------------------------------------
+PASO 3: ENCENDER APACHE Y MYSQL
+-------------------------------------------
+1. Abre el  "XAMPP Control Panel"  (buscalo en el menu Inicio).
+2. Da clic en  Start  junto a  Apache.
+3. Da clic en  Start  junto a  MySQL.
+4. Deben ponerse en verde los dos nombres.
+
+-------------------------------------------
+PASO 4: CREAR LA BASE DE DATOS
+-------------------------------------------
+1. En el navegador abre:  http://localhost/phpmyadmin
+2. Arriba da clic en la pestana  "Importar".
+3. Clic en  "Seleccionar archivo"  y elige:
+      C:\xampp\htdocs\luis_victor\database.sql
+4. Baja al final y da clic en  "Importar" (o "Continuar").
+5. A la izquierda debe aparecer la base  luis_victor
+   con las tablas  usuarios, productos  y  pedidos.
+   (Si ya habias importado una version anterior, vuelve a
+   importar este mismo archivo: tus usuarios no se borran.)
+
+-------------------------------------------
+PASO 5: ABRIR EL SITIO
+-------------------------------------------
+1. Abre:  http://localhost/luis_victor/registro.php
+2. Crea tu cuenta (nombre, correo, contrasena de 6+ letras).
+3. Clic en "Inicia sesion":  http://localhost/luis_victor/login.php
+4. Entra con tu correo y contrasena.
+5. En la tienda elige un producto de la lista, la cantidad,
+   direccion y da clic en  "Comprar".
+6. Tu pedido sale abajo en la tabla "Mis pedidos".
+
+-------------------------------------------
+PASO 6 (OPCIONAL): VER LOS DATOS EN LA BD
+-------------------------------------------
+1. Ve a http://localhost/phpmyadmin
+2. Clic en  luis_victor  >  usuarios  o  pedidos  >  "Examinar".
+
+-------------------------------------------
+PROBLEMAS COMUNES
+-------------------------------------------
+* "Error de conexion"  ->  MySQL no esta encendido (Paso 3),
+  o no importaste database.sql (Paso 4).
+* Se ve el codigo PHP en vez de la pagina  ->  abriste el
+  archivo con doble clic. Usa siempre  http://localhost/...
+* Apache no enciende (puerto 80 ocupado)  ->  cierra Skype u
+  otros programas, o cambia el puerto en XAMPP > Config.
+* Si tu MySQL tiene contrasena, ponla en conexion.php
+  (el tercer dato, donde dice "").
+* Pagina no encontrada  ->  revisa que la carpeta se llame
+  exactamente  luis_victor  y este dentro de htdocs.
